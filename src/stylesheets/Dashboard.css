@@ -1,0 +1,189 @@
+.dashboard-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.dashboard-title {
+  font-size: 2.5em;
+  color: #333;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.dashboard-subtitle {
+  font-size: 1.1em;
+  color: #666;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+
+.course-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-color: #4a90e2;
+}
+
+.course-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.course-card__header h2 {
+  margin: 0;
+  color: #4a90e2;
+  font-size: 1.4em;
+}
+
+.course-card__semester {
+  padding: 5px 12px;
+  background-color: #e8f4f8;
+  color: #2c5f7a;
+  border-radius: 15px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.course-card__name {
+  margin: 15px 0;
+  color: #333;
+  font-size: 1.2em;
+  min-height: 50px;
+}
+
+.course-card__info {
+  margin: 15px 0;
+}
+
+.course-card__info p {
+  margin: 8px 0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.course-card__info strong {
+  color: #333;
+}
+
+.course-card__stats {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.applicants-badge {
+  padding: 8px 16px;
+  background-color: #ffc107;
+  color: #856404;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.course-card__button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.course-card__button:hover {
+  background-color: #357abd;
+}
+
+.course-section {
+  margin-bottom: 50px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #4a90e2;
+}
+
+.course-title {
+  margin: 0;
+  font-size: 1.8em;
+  color: #2c3e50;
+}
+
+.course-applicants-count {
+  background-color: #4a90e2;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.applicant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.no-applicants {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 40px;
+  font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 20px 10px;
+  }
+
+  .dashboard-title {
+    font-size: 2em;
+  }
+
+  .course-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .course-title {
+    font-size: 1.4em;
+  }
+
+  .applicant-list {
+    grid-template-columns: 1fr;
+  }
+}

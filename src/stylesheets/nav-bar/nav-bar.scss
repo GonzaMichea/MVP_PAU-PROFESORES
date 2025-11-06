@@ -1,5 +1,16 @@
 .nav-bar {
   display: flex;
+  align-items: center;
   background-color: #ccc;
   padding-left: 20px;
+}
+
+.nav-bar__separator {
+  margin: 0 8px;
+  color: #666;
+}
+
+.nav-bar__current {
+  font-weight: 500;
+  color: #333;
 }

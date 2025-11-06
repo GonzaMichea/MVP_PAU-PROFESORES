@@ -1,0 +1,154 @@
+.applicant-card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.applicant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.applicant-card__name {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.applicant-card__info {
+  display: flex;
+  gap: 20px;
+}
+
+.applicant-card__gpa,
+.applicant-card__semester {
+  margin: 0;
+  color: #666;
+  font-size: 0.95em;
+}
+
+.applicant-card__gpa strong,
+.applicant-card__semester strong {
+  color: #333;
+}
+
+.applicant-card__preference {
+  margin: 8px 0 0 0;
+  padding: 8px;
+  background-color: #e8f4f8;
+  border-radius: 4px;
+  color: #2c5f7a;
+  font-size: 0.9em;
+}
+
+.applicant-card__course-grade {
+  margin: 8px 0 0 0;
+  padding: 8px;
+  background-color: #e8f8e8;
+  border-radius: 4px;
+  color: #2c5f2c;
+  font-size: 0.9em;
+}
+
+.applicant-card__course-grade strong,
+.applicant-card__preference strong {
+  color: #1a3d4f;
+}
+
+.applicant-card__warning {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  color: #856404;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.applicant-card__status {
+  margin: 8px 0 0 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-badge--selected {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge--pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge--rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.applicant-card__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.applicant-card__button {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.applicant-card__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.applicant-card__button--select {
+  background-color: #28a745;
+  color: white;
+}
+
+.applicant-card__button--select:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.applicant-card__button--select:disabled {
+  background-color: #c3e6cb;
+  color: #155724;
+}
+
+.applicant-card__button--reject {
+  background-color: #dc3545;
+  color: white;
+}
+
+.applicant-card__button--reject:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.applicant-card__button--reject:disabled {
+  background-color: #f5c6cb;
+  color: #721c24;
+}

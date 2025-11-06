@@ -1,0 +1,241 @@
+.applicant-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.applicant-detail--not-found {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.applicant-detail--not-found h2 {
+  color: #d32f2f;
+  margin-bottom: 15px;
+}
+
+.applicant-detail--not-found p {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 1.1em;
+}
+
+.applicant-detail__back-button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  margin-bottom: 20px;
+}
+
+.applicant-detail__back-button:hover {
+  background-color: #357abd;
+}
+
+.applicant-detail__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.applicant-detail__name {
+  margin: 0;
+  color: #333;
+  font-size: 2em;
+}
+
+.applicant-detail__status {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: capitalize;
+}
+
+.applicant-detail__status--selected {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.applicant-detail__status--warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.applicant-detail__status--pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.applicant-detail__status--rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.applicant-detail__info-section,
+.applicant-detail__applications-section {
+  margin-bottom: 30px;
+}
+
+.applicant-detail__info-section h2,
+.applicant-detail__applications-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.applicant-detail__info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.applicant-detail__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.applicant-detail__info-item strong {
+  color: #666;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.applicant-detail__info-item span {
+  color: #333;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.applicant-detail__warning {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 8px;
+  color: #856404;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.05em;
+}
+
+.applicant-detail__applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.applicant-detail__application-card {
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.2s;
+}
+
+.applicant-detail__application-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.applicant-detail__application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.applicant-detail__application-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.3em;
+}
+
+.applicant-detail__course-name {
+  margin: 5px 0 0 0;
+  color: #666;
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+.applicant-detail__application-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.applicant-detail__course-grade {
+  margin: 0;
+  padding: 8px;
+  background-color: #e8f8e8;
+  border-radius: 4px;
+  color: #2c5f2c;
+  font-size: 0.95em;
+}
+
+.applicant-detail__course-grade strong {
+  color: #1a4d1a;
+}
+
+.applicant-detail__app-status {
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-transform: capitalize;
+}
+
+.applicant-detail__app-status--selected {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.applicant-detail__app-status--pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.applicant-detail__app-status--rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.applicant-detail__preference {
+  margin: 0;
+  color: #555;
+  font-size: 1em;
+}
+
+.applicant-detail__preference strong {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .applicant-detail__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .applicant-detail__info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .applicant-detail__application-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
