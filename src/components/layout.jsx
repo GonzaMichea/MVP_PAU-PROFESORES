@@ -11,7 +11,10 @@ const Layout = () => {
   return (
     <BrowserRouter>
       <div className='layout'>
-        <h1 className='layout__title'>PAU-Profesor</h1>
+        <div className='layoutbrand'>
+          <img src='/logo.png' alt='USM logo' className='layoutlogo' />
+          <h1 className='layout__title'>PAU-Profesor</h1>
+        </div>
         <NavBar />
         <div className='layout__page'>
           <Routes>

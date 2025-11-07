@@ -22,7 +22,7 @@ export const NavBar = () => {
         className={navLinkClass}
         to='/'
       >
-        Dashboard
+        Inicio
       </NavLink>
       {course && (
         <>
