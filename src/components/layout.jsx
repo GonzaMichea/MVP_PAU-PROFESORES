@@ -12,7 +12,7 @@ const Layout = () => {
     <BrowserRouter>
       <div className='layout'>
         <div className='layoutbrand'>
-          <img src='/logo.png' alt='USM logo' className='layoutlogo' />
+          <img src='assets/logo.png' alt='USM logo' className='layoutlogo' />
           <h1 className='layout__title'>PAU-Profesor</h1>
         </div>
         <NavBar />
