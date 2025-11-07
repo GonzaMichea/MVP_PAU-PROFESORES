@@ -6,17 +6,18 @@ import CourseApplicants from '../pages/CourseApplicants'
 import ApplicantDetail from '../components/ApplicantDetail'
 
 import NavBar from '../components/nav_bar'
+import logo from '../assets/logo.png'
 
 const Layout = () => {
   return (
     <BrowserRouter>
       <div className='layout'>
         <div className='layoutbrand'>
-          <img src='/logo.png' alt='USM logo' className='layoutlogo' />
-          <h1 className='layout__title'>PAU-Profesor</h1>
+          <img src={logo} alt='USM logo' className='layoutlogo' />
+          <h1 className='layouttitle'>PAU-Profesor</h1>
         </div>
         <NavBar />
-        <div className='layout__page'>
+        <div className='layoutpage'>
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/course/:courseId' element={<CourseApplicants />} />

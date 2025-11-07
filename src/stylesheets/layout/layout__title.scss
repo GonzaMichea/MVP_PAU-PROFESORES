@@ -1,6 +1,18 @@
+.layoutbrand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.layoutlogo {
+  height: 120px;
+  width: auto;
+  display: block;
+}
+
 .layout__title {
   font-size: 24pt;
   margin: 0;
-  padding: 20px;
   text-align: center;
 }
